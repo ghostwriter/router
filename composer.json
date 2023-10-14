@@ -1,11 +1,11 @@
 {
-    "name": "ghostwriter/wip",
-    "description": "Here be dragons",
+    "name": "ghostwriter/router",
+    "description": "Router implementation for PHP",
     "license": "BSD-3-Clause",
     "type": "library",
     "keywords": [
         "ghostwriter",
-        "wip"
+        "router"
     ],
     "authors": [
         {
@@ -15,13 +15,13 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/ghostwriter/wip",
+    "homepage": "https://github.com/ghostwriter/router",
     "support": {
-        "issues": "https://github.com/ghostwriter/wip/issues",
-        "forum": "https://github.com/ghostwriter/wip/discussions",
-        "source": "https://github.com/ghostwriter/wip",
-        "docs": "https://github.com/ghostwriter/wip",
-        "rss": "https://github.com/ghostwriter/wip/releases.atom"
+        "issues": "https://github.com/ghostwriter/router/issues",
+        "forum": "https://github.com/ghostwriter/router/discussions",
+        "source": "https://github.com/ghostwriter/router",
+        "docs": "https://github.com/ghostwriter/router",
+        "rss": "https://github.com/ghostwriter/router/releases.atom"
     },
     "funding": [
         {
@@ -30,34 +30,22 @@
         }
     ],
     "require": {
-        "php": ">=8.2",
-        "ghostwriter/collection": "^1.4",
-        "ghostwriter/config": "^0.4.1",
-        "ghostwriter/container": "^1.6",
-        "ghostwriter/event-dispatcher": "^2.0",
-        "ghostwriter/json": "^1.2",
-        "ghostwriter/option": "^1.5.1",
-        "ghostwriter/result": "^1.3"
+        "php": ">=8.2"
     },
     "require-dev": {
         "ghostwriter/coding-standard": "dev-main",
         "ghostwriter/psalm-plugin": "^0.2 || ^0.3 || ^1"
     },
-    "replace": {},
     "minimum-stability": "stable",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Ghostwriter\\Wip\\": "src/"
-        },
-        "files": [
-            "src/constants.php",
-            "src/functions.php"
-        ]
+            "Ghostwriter\\Router\\": "src"
+        }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ghostwriter\\Wip\\Tests\\": "tests/"
+            "Ghostwriter\\Router\\Tests\\": "tests"
         }
     },
     "bin": [
