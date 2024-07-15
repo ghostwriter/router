@@ -1,13 +1,17 @@
 {
-    "$schema": "vendor/infection/infection/resources/schema.json",
+    "$schema": "https://raw.githubusercontent.com/infection/infection/0.29.6/resources/schema.json",
     "source": {
         "directories": [
-            "src"
+            "src",
+            "tests"
         ],
         "excludes": [
             "tests/Fixture",
             "vendor"
         ]
+    },
+    "phpUnit": {
+        "customPath": "vendor/ghostwriter/coding-standard/tools/phpunit"
     },
     "mutators": {
         "@default": true
