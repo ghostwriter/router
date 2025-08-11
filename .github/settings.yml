@@ -3,7 +3,6 @@
   "description": "[WIP] Router implementation for PHP"
   "homepage": "https://github.com/ghostwriter/router"
   "topics": "ghostwriter, router, wip"
-  "private": false
   "has_issues": true
   "has_projects": false
   "has_wiki": false
