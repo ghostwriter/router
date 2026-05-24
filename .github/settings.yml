@@ -8,10 +8,6 @@
 "repository":
   "name": "router"
   "description": "[WIP] Router implementation for PHP"
-  "topics":
-    - "ghostwriter"
-    - "router"
-    - "php"
   "homepage": "https://github.com/ghostwriter/router"
   "default_branch": "0.1.x"
   "allow_auto_merge": true
