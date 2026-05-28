@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "111c02e3af8957805a42bbfe67b8d013",
+    "content-hash": "431fe24be0524380fe87115b832bcdaf",
     "packages": [
         {
             "name": "ghostwriter/case-converter",
@@ -97,26 +97,47 @@
         },
         {
             "name": "ghostwriter/clock",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/clock.git",
-                "reference": "e68368475feb957b7d40e3d1e03de411fe6b032d"
+                "reference": "ee705b50da2f6d285fa2563207b7487a9f73b865"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/clock/zipball/e68368475feb957b7d40e3d1e03de411fe6b032d",
-                "reference": "e68368475feb957b7d40e3d1e03de411fe6b032d",
+                "url": "https://api.github.com/repos/ghostwriter/clock/zipball/ee705b50da2f6d285fa2563207b7487a9f73b865",
+                "reference": "ee705b50da2f6d285fa2563207b7487a9f73b865",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.3"
+                "ext-mbstring": "*",
+                "php": "~8.4.0 || ~8.5.0",
+                "psr/clock": "^1.0.0"
             },
             "require-dev": {
+                "boundwize/structarmed": "^0.7.12",
+                "ext-xdebug": "*",
                 "ghostwriter/coding-standard": "dev-main",
-                "ghostwriter/psalm-plugin": "dev-main"
+                "ghostwriter/container": "^7.0.2",
+                "ghostwriter/testify": "^0.1.1",
+                "mockery/mockery": "^1.6.12",
+                "phpunit/phpunit": "^13.1.12",
+                "symfony/var-dumper": "^8.0.8"
             },
             "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/ghostwriter/clock",
+                    "name": "ghostwriter/clock"
+                },
+                "ghostwriter": {
+                    "container": {
+                        "provider": [
+                            "Ghostwriter\\Clock\\Container\\ClockProvider"
+                        ]
+                    }
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Ghostwriter\\Clock\\": "src/"
@@ -152,7 +173,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-05T19:26:41+00:00"
+            "time": "2026-05-27T07:46:54+00:00"
         },
         {
             "name": "ghostwriter/collection",
@@ -999,6 +1020,54 @@
             "time": "2018-02-13T20:26:39+00:00"
         },
         {
+            "name": "psr/clock",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/clock.git",
+                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/clock/zipball/e41a24703d4560fd0acb709162f73b8adfc3aa0d",
+                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Clock\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for reading the clock.",
+            "homepage": "https://github.com/php-fig/clock",
+            "keywords": [
+                "clock",
+                "now",
+                "psr",
+                "psr-20",
+                "time"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/clock/issues",
+                "source": "https://github.com/php-fig/clock/tree/1.0.0"
+            },
+            "time": "2022-11-25T14:36:26+00:00"
+        },
+        {
             "name": "psr/container",
             "version": "2.0.2",
             "source": {
@@ -1410,16 +1479,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/coding-standard.git",
-                "reference": "33f2332341fecf8f3aaa266cd5862354a94d2c3a"
+                "reference": "ca8d6f740a7cd548808ae69f7b5fa4550caeb871"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/coding-standard/zipball/33f2332341fecf8f3aaa266cd5862354a94d2c3a",
-                "reference": "33f2332341fecf8f3aaa266cd5862354a94d2c3a",
+                "url": "https://api.github.com/repos/ghostwriter/coding-standard/zipball/ca8d6f740a7cd548808ae69f7b5fa4550caeb871",
+                "reference": "ca8d6f740a7cd548808ae69f7b5fa4550caeb871",
                 "shasum": ""
             },
             "require": {
-                "boundwize/structarmed": "^0.7.12",
                 "ext-apcu": "*",
                 "ext-bcmath": "*",
                 "ext-ctype": "*",
@@ -1465,10 +1533,7 @@
                 "ext-zend-opcache": "*",
                 "ext-zip": "*",
                 "ext-zlib": "*",
-                "mockery/mockery": "^1.6.12",
-                "php": "~8.4.0 || ~8.5.0",
-                "phpunit/phpunit": "^13.1.12",
-                "symfony/var-dumper": "^8.0.8"
+                "php": "~8.4.0 || ~8.5.0"
             },
             "conflict": {
                 "pestphp/pest": "*"
@@ -1530,7 +1595,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-26T18:12:02+00:00"
+            "time": "2026-05-27T19:35:28+00:00"
         },
         {
             "name": "ghostwriter/console",
