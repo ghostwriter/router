@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33913e0e73ab4d0ad6a49115dca3e7af",
+    "content-hash": "66a7a1ed4203cd1e8a95e6d8e45dd593",
     "packages": [
         {
             "name": "ghostwriter/case-converter",
@@ -4686,7 +4686,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "~8.4.0 || ~8.5.0",
+        "php": "~8.4.0 || ~8.5.0 || ~8.6.0",
         "ext-mbstring": "*"
     },
     "platform-dev": {
